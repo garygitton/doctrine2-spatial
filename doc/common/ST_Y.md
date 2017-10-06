@@ -9,7 +9,7 @@ Example:
 ```php
     $queryBuilder = $manager->createQueryBuilder();
     $queryBuilder
-        ->select("id, ST_Area(things.geometry) as area")
+        ->select("id, ST_Y(things.point) as y")
         ->from("geometryOfThings", "things");
     $results = $queryBuilder->getQuery()->getResult();
 ```

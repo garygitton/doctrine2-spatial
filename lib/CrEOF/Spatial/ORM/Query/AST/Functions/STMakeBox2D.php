@@ -2,17 +2,17 @@
 namespace CrEOF\Spatial\ORM\Query\AST\Functions;
 
 /**
- * Class STDistanceSphere
+ * Class STMakeBox2D
  * @package CrEOF\Spatial\ORM\Query\AST\Functions
  */
-class STDistanceSphere extends AbstractSpatialDQLFunction
+class STMakeBox2D extends AbstractSpatialDQLFunction
 {
     protected $platforms = [
         'mysql',
         'postgresql'
     ];
 
-    protected $functionName = 'ST_Distance_Sphere';
+    protected $functionName = 'ST_MakeBox2D';
 
     protected $minGeomExpr = 2;
 

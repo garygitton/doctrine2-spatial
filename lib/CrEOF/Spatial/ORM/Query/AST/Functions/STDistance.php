@@ -2,19 +2,19 @@
 namespace CrEOF\Spatial\ORM\Query\AST\Functions;
 
 /**
- * Class STDistanceSphere
+ * Class STDistance
  * @package CrEOF\Spatial\ORM\Query\AST\Functions
  */
-class STDistanceSphere extends AbstractSpatialDQLFunction
+class STDistance extends AbstractSpatialDQLFunction
 {
     protected $platforms = [
         'mysql',
         'postgresql'
     ];
 
-    protected $functionName = 'ST_Distance_Sphere';
+    protected $functionName = 'ST_Distance';
 
     protected $minGeomExpr = 2;
 
-    protected $maxGeomExpr = 2;
+    protected $maxGeomExpr = 3;
 }

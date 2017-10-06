@@ -2,17 +2,17 @@
 namespace CrEOF\Spatial\ORM\Query\AST\Functions;
 
 /**
- * Class STDistanceSphere
- * @package CrEOF\Spatial\ORM\Query\AST\Functions
+ * Class STEquals
+ * @package CrEOF\Spatial\ORM\Query\AST\Functions\MySql
  */
-class STDistanceSphere extends AbstractSpatialDQLFunction
-{
+class STEquals extends AbstractSpatialDQLFunction {
+
     protected $platforms = [
         'mysql',
         'postgresql'
     ];
 
-    protected $functionName = 'ST_Distance_Sphere';
+    protected $functionName = 'ST_Equals';
 
     protected $minGeomExpr = 2;
 

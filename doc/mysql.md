@@ -2,20 +2,18 @@
 
 ## Functions
 
-* Area
-* AsBinary
-* AsText
-* Buffer
-* Contains
-* Crosses
-* Disjoint
-* ST_Disjoint
-* Envelope
-* GeomFromText
+* Dimension
+* DistanceFromMultyLine
+* ExteriorRing
+* GeodistPt
+* GeometryType
 * GLength
-* Intersects
-* LineStringFromWKB
+* InteriorRingN
+* IsClosed
+* IsEmpty
+* IsSimple
 * LineString
+* LineStringFromWKB
 * MBRContains
 * MBRDisjoint
 * MBREqual
@@ -23,21 +21,11 @@
 * MBROverlaps
 * MBRTouches
 * MBRWithin
-* Overlaps
+* NumInteriorRings
+* NumPoints
 * PointFromWKB
-* Point
-* StartPoint
-* ST_Contains
-* ST_Crosses
-* ST_Disjoint
-* ST_Equals
-* ST_Intersects
-* ST_Overlaps
-* ST_Touches
-* ST_Within
-* Touches
-* Within
-* StartPoint
+* PointN
+* SRID
 
 ## New 
 * ST_Area()

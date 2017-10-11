@@ -32,7 +32,7 @@ use CrEOF\Spatial\PHP\Types\Geometry\GeometryInterface;
  * @author  Derek J. Lambert <dlambert@dereklambert.com>
  * @license http://dlambert.mit-license.org MIT
  */
-abstract class AbstractGeometry implements GeometryInterface
+abstract class AbstractGeometry implements GeometryInterface, \JsonSerializable
 {
     /**
      * @var int
@@ -288,5 +288,10 @@ abstract class AbstractGeometry implements GeometryInterface
         }
 
         return implode(',', $strings);
+    }
+
+    function jsonSerialize()
+    {
+        return $this->toArray();
     }
 }

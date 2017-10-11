@@ -168,14 +168,6 @@ abstract class AbstractPoint extends AbstractGeometry
     }
 
     /**
-     * @return array
-     */
-    public function toArray()
-    {
-        return array($this->x, $this->y);
-    }
-
-    /**
      * @param array $argv
      *
      * @return array
@@ -226,5 +218,13 @@ abstract class AbstractPoint extends AbstractGeometry
         $this->setX($x)
             ->setY($y)
             ->setSrid($srid);
+    }
+
+    public function toArray()
+    {
+        return [
+            'lat' => $this->getLatitude(),
+            'lng' => $this->getLongitude()
+        ];
     }
 }

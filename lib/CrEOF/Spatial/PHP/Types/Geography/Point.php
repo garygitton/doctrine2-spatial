@@ -96,12 +96,4 @@ class Point extends AbstractPoint implements GeographyInterface
 
         return $this;
     }
-
-    public function toLatLngArray()
-    {
-        return [
-            'lat' => $this->getLatitude(),
-            'lng' => $this->getLongitude()
-        ];
-    }
 }

@@ -227,4 +227,12 @@ abstract class AbstractPoint extends AbstractGeometry
             'y' => $this->getY()
         ];
     }
+
+    public function toArrayLatLng()
+    {
+        return [
+            'lat' => $this->getLatitude(),
+            'lng' => $this->getLongitude()
+        ];
+    }
 }
